@@ -228,12 +228,12 @@ The last snipped was a simple example to show how you should call our library an
   """
   Filling model with transfer data
   """
-  transfer.id = "123"
-  transfer.timestamp = datetime.timestamp(datetime.now())
-  transfer.item_id = "123"
-  transfer.sender_account_id = "123"
-  transfer.receiver_email = "test@email.com"
-  transfer.status = "pending"
+  inspetor_transfer.id = "123"
+  inspetor_transfer.timestamp = datetime.timestamp(datetime.now())
+  inspetor_transfer.item_id = "123"
+  inspetor_transfer.sender_account_id = "123"
+  inspetor_transfer.receiver_email = "test@email.com"
+  inspetor_transfer.status = "pending"
 ```
 
 ***Auxiliar models***:
