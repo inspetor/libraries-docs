@@ -213,7 +213,6 @@ The last snipped was a simple example to show how you should call our library an
       self.get_default_item()
   ]
   inspetor_sale.payment = inspetor_payment
-?>
 ```
 
 - **Transfer**: model you fill with ***transference*** data of an item of your API (e.g. transfer of a ticket). The transfer status has fixed allowed values:
@@ -323,7 +322,6 @@ The last snipped was a simple example to show how you should call our library an
   """
   inspetor_session.id = "123"
   inspetor_session.datetime = int(1562934682) // it's the date of that event session in unix timestamp format
-?>
 ```
 
  - **Category**: model you fill with ***event category*** data. In event context it could be, for instance "Show", "Lecture", "Art Exposition", etc.
@@ -338,7 +336,6 @@ The last snipped was a simple example to show how you should call our library an
   """
   category.id = "123"
   category.name = "Cooltegory"
-?>
 ```
 
 ### What you should notice
