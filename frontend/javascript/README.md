@@ -76,6 +76,17 @@ if (inspetor.sharedInstance().isConfigured()) {
 }
 ```
 
+#### trackPageView
+The **pageview tracking is done automatically** in the library, **everytime the user reloads the page or chanegs the state of the page**. But we do give the option to track "pseudo pageview", pageviews that do not change the page or do not alter the state (change the url of the page). You should be carefull when manually tracking pageviews since it can lead to duplicate pageview events. **We recommend that you contact the Inspetor team to get advice if you should or should not use the `trackPageView` function**. 
+
+Here you can see an example on how the tracker is implemented.
+
+```
+if (inspetor.sharedInstance().isConfigured()) {
+    inspetor.sharedInstance().trackPageView("Pseudo PageView")
+}
+```
+
 ### Models
 If you are comming from one of our backend libraries you will notice that we do not use models in our frontend libraries. Here you just need to send us the id of the model.
 
